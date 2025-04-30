@@ -1,0 +1,87 @@
+
+.app-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  .app-cont h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00e6e6;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .flashcard-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .flashcard {
+    width: 100%;
+    max-width: 260px;
+    height: 180px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    transition: transform 0.3s;
+  }
+  
+  
+  
+  
+  .flashcard:hover {
+    transform: scale(1.03);
+  }
+  
+  .flashcard .front,
+  .flashcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backface-visibility: hidden;
+    transition: transform 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+ 
+  .flashcard .front {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+  }
+  
+  
+  .flashcard .back {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flashcard.flipped .front {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard.flipped .back {
+    transform: rotateY(360deg);
+  }
+  
