@@ -36,3 +36,5 @@ return (
     </div>
 );
 };
+
+export default Flash;
