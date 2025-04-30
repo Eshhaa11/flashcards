@@ -19,9 +19,20 @@ return (
         <h1>FlashCard</h1>
     <div className="flashcard-list">
     {flashcards.map((card) => (
-
+         <div 
+         key={card.id}
+         className={`flashcard ${flippedCard === card.id ? 'flipped' : ''}`}
+         onClick={() => handleFlip(card.id)}
+       >
+          <div className="front">
+              <p>{card.question}</p>
+            </div>
+            <div className="back">
+              <p>{card.answer}</p>
+            </div>
+          </div>
+        ))}
     </div>
     </div>
-)
-
-}
+);
+};
