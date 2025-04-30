@@ -8,3 +8,4 @@ const flashcards = [
 ];
 
 const Flash = () => {
+    const [flippedCard, setFlippedCard] = useState(null);
