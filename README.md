@@ -27,7 +27,7 @@ A fun and interactive flashcard app built with React where users can click on ca
 
 
 1. **Clone the repository:**
-   git clone https://github.com/your-username/react-counter-app.git
+   git clone https://github.com/Eshhaa11/flashcards
 
 2. Navigate to the project directory:    
    cd flashcards
