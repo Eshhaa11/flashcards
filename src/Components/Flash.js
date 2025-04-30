@@ -17,6 +17,9 @@ const Flash = () => {
 return (
     <div className="app-cont">
         <h1>FlashCard</h1>
+    <div className="flashcard-list">
+
+    </div>
     </div>
 )
 
