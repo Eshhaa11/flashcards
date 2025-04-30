@@ -9,3 +9,9 @@ const flashcards = [
 
 const Flash = () => {
     const [flippedCard, setFlippedCard] = useState(null);
+
+    const handleFlip = (id) => {
+        setFlippedCard(flippedCard === id ? null : id);
+};
+
+}
