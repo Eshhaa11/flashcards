@@ -14,4 +14,8 @@ const Flash = () => {
         setFlippedCard(flippedCard === id ? null : id);
 };
 
+return (
+    
+)
+
 }
