@@ -15,7 +15,9 @@ const Flash = () => {
 };
 
 return (
-    
+    <div className="app-cont">
+        
+    </div>
 )
 
 }
