@@ -18,6 +18,7 @@ return (
     <div className="app-cont">
         <h1>FlashCard</h1>
     <div className="flashcard-list">
+    {flashcards.map((card) => (
 
     </div>
     </div>
